@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: hello-world
+  description: Hello World example for gRPC
+spec:
+  type: openapi
+  lifecycle: deprecated
+  owner: team-c
+  definition: 
+    $text: http://localhost:8080/swagger/doc.json
